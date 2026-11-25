@@ -1,0 +1,6 @@
+---
+# ~/.config/personal-workflows/sources/inbox-folder.yaml
+kind: files
+adapter: local-folder
+path: ~/Documents/Scans/Inbox
+pattern: "*.pdf"

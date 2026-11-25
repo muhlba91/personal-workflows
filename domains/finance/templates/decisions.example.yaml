@@ -1,0 +1,26 @@
+---
+# ~/.local/state/personal-workflows/finance/decisions.yaml
+categories:
+  shop orders: ignore
+  vehicle charging: ignore
+vendors:
+  Example Cloud:
+    disposition: store
+    root: personal
+    folder: Example Cloud
+    exemplar: Example Cloud/2026/2026-10.pdf
+    note: one invoice per month
+    match:
+      - Example Cloud Ltd
+      - billing.example.com
+  Example Shop:
+    disposition: ignore
+    category: shop orders
+    match:
+      - Example Shop GmbH
+  Example Hosting:
+    disposition: manual
+    root: personal
+    folder: Example Hosting
+    match:
+      - Example Hosting SAS

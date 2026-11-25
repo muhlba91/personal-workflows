@@ -1,0 +1,8 @@
+---
+# ~/.config/personal-workflows/sources/mail.yaml
+kind: mailbox
+adapter: spark
+accounts:
+  - alice@example.com
+  - billing@example.org
+folder: Inbox

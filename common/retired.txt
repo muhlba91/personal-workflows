@@ -1,0 +1,1 @@
+# Retired rule IDs: never reuse them. Format: ID replaced-by (or a dash when nothing replaces it).

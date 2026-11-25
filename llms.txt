@@ -1,0 +1,25 @@
+# Personal Workflows
+
+> The owner's personal workflows as agent skills, with the rules and connector contracts they rely on.
+
+## Start Here
+
+- [`AGENTS.md`](AGENTS.md): layout, boundaries, rule format, working rules
+- [`README.md`](README.md): layout, install, configuration
+
+## Rules and Contracts
+
+- [`common/principles/workflow.md`](common/principles/workflow.md): cross-domain workflow rules
+- [`common/principles/repository.md`](common/principles/repository.md): repository rules
+- [`common/connectors/README.md`](common/connectors/README.md): connector kinds and adapters
+- [`domains/finance/README.md`](domains/finance/README.md): finance domain
+- [`domains/finance/rules/invoices.md`](domains/finance/rules/invoices.md): invoice rules
+- [`common/guides/maintaining.md`](common/guides/maintaining.md): maintaining the repository
+- [`CHANGELOG.md`](CHANGELOG.md): rule changes
+- [`common/retired.txt`](common/retired.txt): retired rule IDs, never reused
+- [`OPEN-QUESTIONS.md`](OPEN-QUESTIONS.md): undecided points
+
+## Skills
+
+- [`common/skills/README.md`](common/skills/README.md): how to write a skill
+- [`pw-finance-invoice-intake`](domains/finance/skills/pw-finance-invoice-intake/SKILL.md): file invoices from mail and folders

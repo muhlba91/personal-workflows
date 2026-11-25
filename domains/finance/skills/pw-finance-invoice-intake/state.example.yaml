@@ -1,0 +1,9 @@
+---
+# ~/.local/state/personal-workflows/finance/pw-finance-invoice-intake/mail.yaml
+watermark: 2026-10-28
+deferred:
+  - hash: 1111111111111111111111111111111111111111111111111111111111111111
+    first_seen: 2026-10-20
+ignored:
+  - hash: 0000000000000000000000000000000000000000000000000000000000000000
+    first_seen: 2026-10-28

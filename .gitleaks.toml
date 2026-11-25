@@ -1,0 +1,39 @@
+title = "personal-workflows"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "iban"
+description = "IBAN-like string"
+regex = '''\b[A-Z]{2}\d{2}(?: ?[A-Z0-9]{4}){3,7}(?: ?[A-Z0-9]{1,4})?\b'''
+keywords = ["at", "de", "gb", "nl"]
+
+[[rules]]
+id = "vat-id"
+description = "EU VAT identification number"
+regex = '''\b(?:ATU\d{8}|DE\d{9}|NL\d{9}B\d{2}|FR[A-Z0-9]{2}\d{9}|IT\d{11})\b'''
+keywords = ["atu", "de", "nl", "fr", "it"]
+
+[[rules]]
+id = "email-address"
+description = "email address outside the reserved example domains"
+regex = '''[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}'''
+keywords = ["@"]
+
+  [rules.allowlist]
+  regexTarget = "match"
+  regexes = ['''@(?:[A-Za-z0-9-]+\.)*(?:example\.(?:com|org|net)|users\.noreply\.github\.com)$''', '''^noreply@''']
+
+[[rules]]
+id = "home-path"
+description = "absolute home directory path"
+regex = '''/(?:Users|home)/[A-Za-z0-9._-]+/'''
+keywords = ["/users/", "/home/"]
+
+  [rules.allowlist]
+  regexTarget = "match"
+  regexes = ['''/(?:Users|home)/(?:alice|example|runner)/''']
+
+[allowlist]
+paths = ['''^mise\.lock$''', '''^\.mise/''', '''^LICENSE\.md$''', '''^\.ruff_cache/''', '''(^|/)__pycache__/''']

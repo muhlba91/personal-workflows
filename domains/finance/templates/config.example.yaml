@@ -1,0 +1,10 @@
+---
+# ~/.config/personal-workflows/finance/config.yaml
+roots:
+  - label: personal
+    path: ~/Documents/Finances/Invoices
+  - label: household
+    path: ~/Shared/Finances/Invoices
+sources:
+  - mail
+  - inbox-folder
